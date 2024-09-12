@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>
+      first website  
+    </title>
+  
+    <style> 
+    .row{ 
+      width:720px;
+      margin: 10px auto 10px auto ;
+    }
+    .image-container{
+      display: table-cell; 
+      vertical-align: middle; 
+      padding:20px;
+    }
+    </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script></script>
+ 
+</head>
+
+  <body style="background-color: rgba(84, 119, 94, 0.907)">
+
+
+    <div class="row">
+
+      <div class="image-container"><img id="a1" src="img/a1.png" onmouseover="this.src='img/s1.png';" onmouseout="this.src='img/a1.png';"
+        width="200" height="200"/></div> 
+      <div class="image-container"><img id="a2" src="img/a2.png" onmouseover="this.src='img/s2.png';" onmouseout="this.src='img/a2.png';"
+        width="200" height="200"/></div>
+      <div class="image-container"><img id="a3" src="img/a3.png" onmouseover="this.src='img/s3.png';" onmouseout="this.src='img/a3.png';"
+        width="200" height="200"/></div> 
+
+    </div>
+    
+    <div class="row"> 
+    
+
+      <div class="image-container"><img id="a4" src="img/a4.png" onmouseover="this.src='img/s4.png';" onmouseout="this.src='img/a4.png';"
+         width="200" height="200"/></div>
+      <div class="image-container"><img id="a5" src="img/a5.png" onmouseover="this.src='img/s5.png';" onmouseout="this.src='img/a5.png';"
+        width="200" height="200"/></div>
+      <div class="image-container"><img id="a6" src="img/a6.png" onmouseover="this.src='img/s6.png';" onmouseout="this.src='img/a6.png';"
+         width="200" height="200"/></div> 
+
+    </div>
+
+    <div class="row"> 
+
+      <div class="image-container"><img id="a7" src="img/a7.png" onmouseover="this.src='img/s7.png';" onmouseout="this.src='img/a7.png';"
+        width="200" height="200"/></div>
+      <div class="image-container"><img id="a8" src="img/a8.png" onmouseover="this.src='img/s8.png';" onmouseout="this.src='img/a8.png';"
+        width="200" height="200"/></div>
+      <div class="image-container"><img id="a9" src="img/a9.png" onmouseover="this.src='img/s9.png';" onmouseout="this.src='img/a9.png';"
+        width="200" height="200"/></div> 
+
+    </div>
+
+    <script>
+      var sound1 = new buzz.sound("sound/n1.wav");
+      var sound2 = new buzz.sound("sound/n2.wav");
+      var sound3 = new buzz.sound("sound/n3.wav"); 
+      var sound4 = new buzz.sound("sound/n4.wav"); 
+      var sound5 = new buzz.sound("sound/n5.wav");
+      var sound6 = new buzz.sound("sound/n6.wav");
+      var sound7 = new buzz.sound("sound/n7.wav");
+      var sound8 = new buzz.sound("sound/n8.wav");
+      var sound9 = new buzz.sound("sound/n9.wav");
+
+      window.onload = function() {
+        document.getElementById('a1').addEventListener('mouseover', function () {sound1.play();});
+        document.getElementById('a2').addEventListener('mouseover', function () {sound2.play();});
+        document.getElementById('a3').addEventListener('mouseover', function () {sound3.play();});
+        document.getElementById('a4').addEventListener('mouseover', function () {sound4.play();});
+        document.getElementById('a5').addEventListener('mouseover', function () {sound5.play();});
+        document.getElementById('a6').addEventListener('mouseover', function () {sound6.play();});
+        document.getElementById('a7').addEventListener('mouseover', function () {sound7.play();});
+        document.getElementById('a8').addEventListener('mouseover', function () {sound8.play();});
+        document.getElementById('a9').addEventListener('mouseover', function () {sound9.play();});
+      
+      };
+      </script> 
+
+   
+  </body>
+</html>
+
